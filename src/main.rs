@@ -2,7 +2,7 @@ use rand::Rng;
 use std::time::Instant;
 
 fn main() {
-    let size = 10000;
+    let size = 100;
     let mut rng = rand::thread_rng();
     
     let mut rnd_vec: Vec<i32> = (0..size).map(|_| rng.gen_range(1..=10000)).collect();
